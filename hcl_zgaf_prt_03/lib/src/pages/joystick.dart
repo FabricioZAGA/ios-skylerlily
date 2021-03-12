@@ -9,6 +9,15 @@ class JoyStick extends StatefulWidget {
 }
 
 class _JoyStickState extends State<JoyStick> {
+  void showToast() {
+    Fluttertoast.showToast(
+        msg: 'Out of Boundaries',
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.black,
+        textColor: Colors.white);
+  }
+
   final _estilo = new TextStyle(fontSize: 30);
   List<int> y = [-2, -1, 0, 1, 2];
   List<int> x = [-2, -1, 0, 1, 2];
@@ -39,6 +48,7 @@ class _JoyStickState extends State<JoyStick> {
               onPressed: () {
                 setState(() {
                   if (iniY == 4) {
+                    showToast();
                     iniY = 0;
                   } else {
                     iniY++;
@@ -55,6 +65,7 @@ class _JoyStickState extends State<JoyStick> {
             onPressed: () {
               setState(() {
                 if (iniX == 0) {
+                  showToast();
                   iniX = 4;
                 } else {
                   iniX--;
@@ -68,6 +79,7 @@ class _JoyStickState extends State<JoyStick> {
             onPressed: () {
               setState(() {
                 if (iniX == 4) {
+                  showToast();
                   iniX = 0;
                 } else {
                   iniX++;
@@ -84,6 +96,7 @@ class _JoyStickState extends State<JoyStick> {
               onPressed: () {
                 setState(() {
                   if (iniY == 0) {
+                    showToast();
                     iniY = 4;
                   } else {
                     iniY--;
