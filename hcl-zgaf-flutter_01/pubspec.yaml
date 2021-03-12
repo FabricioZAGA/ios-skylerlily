@@ -1,4 +1,4 @@
-name: hcl_zgaf_prt_03
+name: hcl_zgaf_flutter_01
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -23,7 +23,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  fluttertoast: ^7.1.6
 
 
   # The following adds the Cupertino Icons font to your application.
