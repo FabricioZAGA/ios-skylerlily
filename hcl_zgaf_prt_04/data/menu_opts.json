@@ -1,0 +1,34 @@
+{
+  "nombreApp": "Componentes",
+  "rutas": [
+    {
+      "ruta": "alert",
+      "icon": "add_alert",
+      "texto": "Alertas!"
+    },
+    {
+      "ruta": "avatar",
+      "icon": "accessibility",
+      "texto": "Avatar!"
+    },
+    {
+      "ruta": "card",
+      "icon": "folder_open",
+      "texto": "Cards - Tarjetas!"
+    }
+  ],
+  "rutas2": [
+    {
+      "ruta": "location",
+      "icon": "add_location",
+      "texto": "Location!",
+      "descripcion": "ICONO DE LOCALIZACION"
+    },
+    {
+      "ruta": "mac",
+      "icon": "laptop_mac",
+      "texto": "Laptop!",
+      "descripcion": "ICONO DE MAC"
+    }
+  ]
+}
