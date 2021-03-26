@@ -35,19 +35,19 @@ class HomePage2 extends StatelessWidget {
           subtitle: Text(opt['descripcion']),
           trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
           onTap: () {
-            var route;
-            switch (opt['ruta']) {
-              case 'mac':
-                route = MaterialPageRoute(
-                    builder: (context) => AlertPage(
-                          text: opt['descripcion'],
-                        ));
-                break;
-              default:
-                route = MaterialPageRoute(builder: (context) => HomePage());
-                break;
-            }
-            Navigator.push(context, route);
+            // var route;
+            // switch (opt['ruta']) {
+            //   case 'mac':
+            //     route = MaterialPageRoute(
+            //         builder: (context) => AlertPage(
+            //               text: opt['descripcion'],
+            //             ));
+            //     break;
+            //   default:
+            //     route = MaterialPageRoute(builder: (context) => HomePage());
+            //     break;
+            // }
+            // Navigator.push(context, route);
           });
       opciones..add(widgetTemp)..add(Divider());
     });

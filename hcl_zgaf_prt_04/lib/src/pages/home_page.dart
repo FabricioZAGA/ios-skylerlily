@@ -33,18 +33,18 @@ class HomePage extends StatelessWidget {
           leading: getIcon(opt['icon']),
           trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
           onTap: () {
-            var route;
-            switch (opt['ruta']) {
-              case 'alert':
-                route = MaterialPageRoute(builder: (context) => HomePage2());
-                break;
-              default:
-                route = MaterialPageRoute(
-                    builder: (context) => HomePageAlternativo());
-                break;
-            }
+            // var route;
+            // switch (opt['ruta']) {
+            //   case 'alert':
+            //     route = MaterialPageRoute(builder: (context) => HomePage2());
+            //     break;
+            //   default:
+            //     route = MaterialPageRoute(
+            //         builder: (context) => HomePageAlternativo());
+            //     break;
+            // }
 
-            Navigator.push(context, route);
+            Navigator.pushNamed(context, opt['ruta']);
           });
       opciones..add(widgetTemp)..add(Divider());
     });
